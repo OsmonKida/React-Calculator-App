@@ -1,0 +1,124 @@
+.App {
+  display: flex;
+  width: 100;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.App .calc-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding-bottom: 50px;
+  border-radius: 50px 50px 50px 50px;
+}
+
+.App .calc-wrapper .row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.App .calc-wrapper .row .label {
+  width: 100%;
+  height: 150px;
+  border: 0px;
+}
+
+.App .calc-wrapper .row .btn {
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+  font-size: 24px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.App .calc-wrapper .row .delete-btn {
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+  font-size: 22px;
+  /* border-radius: 0 0 50px 0; */
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.App .calc-wrapper .row .clear-btn {
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 0px;
+  /* border-radius: 0 0 0 50px; */
+  font-size: 24px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.App .calc-wrapper .row .zero-btn {
+  width: 190px;
+  height: 90px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 0px;
+  /* border-radius: 0 0 0 50px; */
+  font-size: 24px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 25%;
+}
+
+.row .zero-btn:hover,
+.row .clear-btn:hover,
+.row .btn:hover,
+.row .delete-btn:hover {
+  background-color: aliceblue;
+}
+.row .zero-btn:active,
+.row .btn:active,
+.row .clear-btn:active,
+.row .delete-btn:active {
+  background-color: gray;
+  color: white;
+  font-size: 26px;
+}
+
+.App .calc-wrapper .row .operator-btn {
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+  background-color: orange;
+  border: 1px solid black;
+  font-size: 28px;
+  border-radius: 50%;
+}
+.App .calc-wrapper .row .operator-btn:hover {
+  background-color: coral;
+}
+.App .calc-wrapper .row .operator-btn:active {
+  background-color: chocolate;
+  color: white;
+}
+
+.row .label {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+.row .footer {
+  background-color: black;
+  height: 50px;
+  width: 100%;
+  border-radius: 0 0 50px 50px;
+}
